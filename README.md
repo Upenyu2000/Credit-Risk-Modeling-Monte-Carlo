@@ -81,8 +81,6 @@ project-root/
 ├── model/
 │   ├── model_data.pkl                # Serialized machine learning model and preprocessing data
 │   ├── tuned_hyperparameters.txt    # Details of the optimized hyperparameters
-│
-├── Lauki Finance.JPG                # Project logo or related image
 ├── Readme.md                        # Documentation file
 ├── main.py                          # Streamlit application file
 ├── requirements.txt                 # List of required Python packages
@@ -156,10 +154,6 @@ All dependencies are listed in `requirements.txt` for easy installation.
 ## **Example Screenshots**
 1. **Home Page**: Displays the project title and input interface.
 2. **Results Page**: Shows default probability, credit score, and rating with actionable insights.
-
-![image](https://github.com/user-attachments/assets/d1b51282-cf2a-4e9a-ab19-fbe407b425ba)
-
-
 
 ---
 
