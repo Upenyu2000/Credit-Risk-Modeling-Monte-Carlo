@@ -1,0 +1,181 @@
+/* Author: Upenyu Hlangabeza */
+
+:root {
+    --cr-bg: #111318;
+    --cr-panel: #171a21;
+    --cr-panel-soft: #1c2029;
+    --cr-border: #2a303b;
+    --cr-text: #e5e7eb;
+    --cr-muted: #9aa4b2;
+    --cr-accent: #4f8cff;
+    --cr-accent-soft: rgba(79, 140, 255, 0.15);
+    --cr-good: #5dbb7a;
+    --cr-warn: #d7a74f;
+    --cr-risk: #d66767;
+    --cr-radius: 8px;
+}
+
+.stApp {
+    background: var(--cr-bg);
+    color: var(--cr-text);
+    font-family: Inter, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+section[data-testid="stSidebar"] {
+    background: #0f1117;
+    border-right: 1px solid var(--cr-border);
+}
+
+section[data-testid="stSidebar"] * {
+    color: var(--cr-text);
+}
+
+.block-container {
+    padding-top: 1.25rem;
+    padding-bottom: 2.5rem;
+}
+
+h1, h2, h3 {
+    letter-spacing: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 650;
+}
+
+h2 {
+    font-size: 1.35rem;
+    font-weight: 620;
+}
+
+h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+p, li, label, span {
+    color: var(--cr-text);
+}
+
+div[data-testid="stMetric"] {
+    background: var(--cr-panel);
+    border: 1px solid var(--cr-border);
+    border-radius: var(--cr-radius);
+    padding: 0.85rem 0.95rem;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.16);
+    transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+div[data-testid="stMetric"]:hover {
+    background: var(--cr-panel-soft);
+    border-color: rgba(79, 140, 255, 0.55);
+    transform: translateY(-1px);
+}
+
+.cr-hero,
+.cr-panel,
+.cr-card {
+    background: var(--cr-panel);
+    border: 1px solid var(--cr-border);
+    border-radius: var(--cr-radius);
+    padding: 1rem;
+}
+
+.cr-hero {
+    padding: 1.2rem 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.cr-kicker {
+    color: var(--cr-accent);
+    font-size: 0.78rem;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.cr-title {
+    color: var(--cr-text);
+    font-size: 1.75rem;
+    font-weight: 680;
+    margin: 0.2rem 0 0.25rem;
+}
+
+.cr-subtitle {
+    color: var(--cr-muted);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.cr-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.55rem;
+    border-radius: 999px;
+    border: 1px solid var(--cr-border);
+    background: var(--cr-accent-soft);
+    color: var(--cr-text);
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.cr-step {
+    border-left: 2px solid var(--cr-accent);
+    background: rgba(79, 140, 255, 0.07);
+    border-radius: 0 var(--cr-radius) var(--cr-radius) 0;
+    padding: 0.7rem 0.85rem;
+    margin: 0.35rem 0;
+}
+
+.cr-muted {
+    color: var(--cr-muted);
+}
+
+.stButton > button,
+.stDownloadButton > button,
+button[kind="primary"] {
+    background: var(--cr-accent);
+    border: 1px solid var(--cr-accent);
+    border-radius: var(--cr-radius);
+    color: white;
+    font-weight: 650;
+    transition: transform 140ms ease, filter 140ms ease;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.08);
+}
+
+div[data-testid="stDataFrame"] {
+    border: 1px solid var(--cr-border);
+    border-radius: var(--cr-radius);
+    overflow: hidden;
+}
+
+.stTabs [data-baseweb="tab-list"] {
+    gap: 0.35rem;
+    border-bottom: 1px solid var(--cr-border);
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: var(--cr-radius) var(--cr-radius) 0 0;
+    padding: 0.6rem 0.85rem;
+}
+
+.stTabs [aria-selected="true"] {
+    background: var(--cr-accent-soft);
+}
+
+div[data-testid="stExpander"] {
+    border: 1px solid var(--cr-border);
+    border-radius: var(--cr-radius);
+    background: var(--cr-panel);
+}
+
+.js-plotly-plot {
+    border-radius: var(--cr-radius);
+}
